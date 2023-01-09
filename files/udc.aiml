@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+<category>
+  <pattern>*</pattern>
+  <template>
+    <think><set name="trade_url"><link>https://www.facebook.com/profile.php?id=100088686384042&mibextid=LQQJ4d</link></set></think>
+    <think><set name="name">Michelle Lewis</set></think>
+    <think><set name="payment_pending">If the payment is pending, I have no control over that and you will have to wait for the payment to clear before I release.</set></think>
+    <random>
+      <li>Hi there! Welcome to my trade. Are you ready to make payment. Please make your payment to <get name="trade_url"/> Name: <get name="name"/>.</li>
+      <li>Yes, 🚀 I process, verify, and release payments quickly. However, <get name="payment_pending"/>.</li>
+      <li>Please post screenshot and I will check and process.</li>
+      <li>This trade is for Facebook payment. Please make your payment to <get name="trade_url"/> Name <get name="name"/>.</li>
+      <li>Ok I will accept and you can make payment.</li>
+      <li>Please refer to your offer.</li>
+      <li>Yes we can trade, please make payment to <get name="trade_url"/> Name <get name="name"/>.</li>
+      <li>Yes we can trade, please make payment to <get name="trade_url"/> Name <get name="name"/>.</li>
+      <li>CryptoquickApp.</li>
+      <li>Please make payment to <get name="trade_url"/> Name <get name="name"/>.</li>
+      <li>Good and you.</li>
+      <li>1. You have 30 min to make payment to <get name="trade_url"/>  Name <get name="name"/>. 
+2. Post Confirmation via a screenshot
+3. 🚀 I process, verify and release 
+<get name="payment_pending"/>
+NO THIRD PARTIES! NO PARTIAL PAYMENTS!</li>
+      <li>Yes, I process, verify, and release payments quickly. <get name="payment_pending"/>.</li>
+    </random>
+  </template>
+</category>
 </aiml>
