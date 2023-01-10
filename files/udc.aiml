@@ -8,7 +8,7 @@
     <think><set name="payment_pending">If the payment is pending, I have no control over that and you will have to wait for the payment to clear before I release.</set></think>
     <random>
       <li>Hi there! Welcome to my trade. Are you ready to make payment. Please make your payment to <get name="trade_url"/> Name: <get name="name"/>.</li>
-      <li>Yes, 🚀 I process, verify, and release payments quickly. However, <get name="payment_pending"/>.</li>
+      <li>Yes,I process, verify, and release payments quickly. However, <get name="payment_pending"/>.</li>
       <li>Please post screenshot and I will check and process.</li>
       <li>This trade is for Facebook payment. Please make your payment to <get name="trade_url"/> Name <get name="name"/>.</li>
       <li>Ok I will accept and you can make payment.</li>
